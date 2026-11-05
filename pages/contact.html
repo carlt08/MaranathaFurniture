@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Maranatha Furnishers</title>
+    <meta name="description" content="Contact Maranatha Furnishers in Porterville by phone, WhatsApp or Facebook, or visit the shop on Jakkalskloof Road.">
+    <meta name="theme-color" content="#8a5a3b">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="contact">
+    <div id="site-header"></div>
+    <noscript><p class="notice notice--warning container">The contact form needs JavaScript. Please enable it, or contact us on WhatsApp or by phone.</p></noscript>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Contact</p>
+                <h1>Get in touch</h1>
+                <p>Call us, send a WhatsApp message or visit the shop.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container info-grid">
+                <div class="card">
+                    <h2>Our details</h2>
+                    <ul class="contact-list">
+                        <li data-icon="pin"><span><strong data-config="businessName"></strong><br><span data-config="address"></span></span></li>
+                        <li data-icon="phone"><a data-link="tel" data-config="phone"></a></li>
+                        <li data-icon="whatsapp"><a data-link="whatsapp">Message us on WhatsApp</a></li>
+                        <li data-icon="facebook"><a data-link="facebook">Visit our Facebook page</a></li>
+                        <li data-icon="mail" data-requires="email"><a data-link="email" data-config="email"></a></li>
+                        <li data-icon="clock"><span data-config="openingHours"></span></li>
+                    </ul>
+                    <div class="actions">
+                        <a class="btn btn--primary" data-link="directions" data-icon="pin">Get directions</a>
+                        <a class="btn btn--whatsapp" data-link="whatsapp" data-icon="whatsapp">WhatsApp us</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Send us a message</h2>
+                    <form id="contact-form" class="form-grid" novalidate>
+                        <div class="field">
+                            <label for="fullName">Your name <span class="req" aria-hidden="true">*</span></label>
+                            <input class="input" id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="fullName-error">
+                            <p class="field__error" id="fullName-error" hidden></p>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Contact number <span class="req" aria-hidden="true">*</span></label>
+                            <input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 084 593 2084" required aria-describedby="phone-error">
+                            <p class="field__error" id="phone-error" hidden></p>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email address <span class="hint">(optional)</span></label>
+                            <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" aria-describedby="email-error">
+                            <p class="field__error" id="email-error" hidden></p>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+                            <textarea class="textarea" id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                            <p class="field__error" id="message-error" hidden></p>
+                        </div>
+                        <div class="hp" aria-hidden="true">
+                            <label for="website">Leave this field empty</label>
+                            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div data-contact-result role="alert" hidden></div>
+                        <button type="submit" class="btn btn--primary btn--large btn--block">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="map-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="map-title">Find us</h2>
+                    <a data-link="maps">Open in Google Maps</a>
+                </div>
+                <div class="map-frame map-frame--wide" data-map></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/contact.js"></script>
+</body>
+</html>

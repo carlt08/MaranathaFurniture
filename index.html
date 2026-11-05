@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maranatha Furnishers | New &amp; Second-Hand Furniture in Porterville</title>
+    <meta name="description" content="Browse new and second-hand furniture from your local Porterville furniture shop. Lounge suites, beds, dining sets, TV stands and more.">
+    <meta name="theme-color" content="#8a5a3b">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+    <div id="site-header"></div>
+    <noscript><p class="notice notice--warning container">This website needs JavaScript to show products and the cart. Please enable it, or contact us on WhatsApp or by phone.</p></noscript>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <picture>
+                <source media="(min-width: 48em)" srcset="assets/images/hero/hero-desktop.webp" width="1600" height="800">
+                <img class="hero__image" src="assets/images/hero/hero-mobile.webp" width="800" height="1000" fetchpriority="high"
+                     alt="Sunny living room with a brown sofa, armchair and coffee table (demonstration stock photo)">
+            </picture>
+            <div class="container hero__content">
+                <p class="hero__eyebrow" data-config="slogan"></p>
+                <h1 id="hero-title">Make Your House Feel Like Home.</h1>
+                <p class="hero__text">Find furniture you'll love at prices you'll appreciate. Browse new and second-hand furniture from your local Porterville furniture shop.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary btn--large" href="pages/shop.html">Explore Furniture</a>
+                    <a class="btn btn--whatsapp btn--large" data-link="whatsapp" data-icon="whatsapp">WhatsApp Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="categories-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="categories-title">Shop by category</h2>
+                    <a href="pages/shop.html">View all furniture</a>
+                </div>
+                <div id="category-grid" class="category-grid"><p class="loading">Loading categories...</p></div>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 id="featured-title">Featured products</h2>
+                        <p class="section-intro">Demonstration listings showing how featured furniture will appear.</p>
+                    </div>
+                    <a href="pages/shop.html?featured=1">See all featured</a>
+                </div>
+                <div id="featured-grid" class="product-grid"><p class="loading">Loading featured products...</p></div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="promo-title">
+            <div class="container">
+                <h2 id="promo-title" class="sr-only">New and second-hand furniture</h2>
+                <div class="promo-grid">
+                    <article class="promo">
+                        <img src="assets/images/hero/promo-new.webp" width="800" height="600" loading="lazy"
+                             alt="Modern living room with a dark sofa and wooden coffee table (demonstration stock photo)">
+                        <div class="promo__body">
+                            <p class="eyebrow">New furniture</p>
+                            <h3>Fresh pieces for every room</h3>
+                            <p>Browse brand-new lounge suites, beds, dining sets, cabinets and more.</p>
+                            <a class="btn btn--primary" href="pages/new-furniture.html">Shop new furniture</a>
+                        </div>
+                    </article>
+                    <article class="promo">
+                        <img src="assets/images/hero/promo-second-hand.webp" width="800" height="600" loading="lazy"
+                             alt="Cosy living room with a grey sofa, wooden chairs and plants (demonstration stock photo)">
+                        <div class="promo__body">
+                            <p class="eyebrow">Second-hand furniture</p>
+                            <h3>Pre-owned pieces with a second life</h3>
+                            <p>Each second-hand item is a single piece and is shown with a condition: Excellent, Good, Fair or Refurbished.</p>
+                            <a class="btn btn--primary" href="pages/second-hand.html">Shop second-hand</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="why-title">
+            <div class="container">
+                <div class="section-header"><h2 id="why-title">Why shop with us</h2></div>
+                <ul class="feature-grid">
+                    <li class="feature">
+                        <span class="feature__icon" data-icon="tag" data-icon-size="22"></span>
+                        <div><h3>New and second-hand</h3><p>One local shop for both, so you can choose what suits your home and budget.</p></div>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon" data-icon="store" data-icon-size="22"></span>
+                        <div><h3>Your local shop</h3><p>Visit us in Porterville and see the furniture for yourself.</p></div>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon" data-icon="truck" data-icon-size="22"></span>
+                        <div><h3>Our own delivery vehicle</h3><p>Ask us about local delivery. Costs are confirmed before you pay.</p></div>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon" data-icon="chat" data-icon-size="22"></span>
+                        <div><h3>Easy to reach</h3><p>Call us or send a WhatsApp message about any item.</p></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="visit-title">
+            <div class="container">
+                <div class="section-header"><h2 id="visit-title">Visit our store</h2></div>
+                <div class="info-grid">
+                    <div class="card">
+                        <ul class="contact-list">
+                            <li data-icon="pin"><span><strong data-config="businessName"></strong><br><span data-config="address"></span></span></li>
+                            <li data-icon="phone"><a data-link="tel" data-config="phone"></a></li>
+                            <li data-icon="whatsapp"><a data-link="whatsapp">Message us on WhatsApp</a></li>
+                            <li data-icon="facebook"><a data-link="facebook">Find us on Facebook</a></li>
+                            <li data-icon="clock"><span data-config="openingHours"></span></li>
+                        </ul>
+                        <div class="actions">
+                            <a class="btn btn--primary" data-link="directions" data-icon="pin">Get directions</a>
+                            <a class="btn btn--outline" data-link="maps">Open in Google Maps</a>
+                        </div>
+                    </div>
+                    <div class="map-frame" data-map></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>

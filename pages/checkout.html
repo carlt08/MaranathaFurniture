@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout | Maranatha Furnishers</title>
+    <meta name="description" content="Send your furniture order request to Maranatha Furnishers. Stock and delivery are confirmed before payment.">
+    <meta name="theme-color" content="#8a5a3b">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="cart">
+    <div id="site-header"></div>
+    <noscript><p class="notice notice--warning container">This website needs JavaScript for checkout. Please enable it, or contact us on WhatsApp or by phone.</p></noscript>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Checkout</h1>
+                <p>This is an order request, not a payment. Our staff confirm stock and delivery cost first, then send banking details for EFT.</p>
+            </div>
+        </section>
+
+        <div class="container section section--tight">
+            <p class="loading" data-checkout-loading>Loading your order...</p>
+
+            <div class="state state--empty" data-checkout-empty hidden>
+                <p class="state__title">Your cart is empty</p>
+                <p>Add some furniture to your cart before checking out.</p>
+                <a class="btn btn--primary" href="shop.html">Browse furniture</a>
+            </div>
+
+            <div class="state state--error" data-checkout-blocked hidden>
+                <p class="state__title">Some items need your attention</p>
+                <p>One or more items in your cart are no longer available. Please review your cart first.</p>
+                <a class="btn btn--primary" href="cart.html">Go to cart</a>
+            </div>
+
+            <div class="checkout-layout" data-checkout-content hidden>
+                <aside class="checkout-summary" data-order-summary aria-labelledby="summary-title"></aside>
+
+                <form id="checkout-form" class="checkout-form" novalidate>
+                    <section class="form-section" aria-labelledby="contact-title">
+                        <h2 id="contact-title">Your details</h2>
+                        <div class="form-grid form-grid--2">
+                            <div class="field field--full">
+                                <label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
+                                <input class="input" id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="fullName-error">
+                                <p class="field__error" id="fullName-error" hidden></p>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Contact number <span class="req" aria-hidden="true">*</span></label>
+                                <input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 084 593 2084" required aria-describedby="phone-error">
+                                <p class="field__error" id="phone-error" hidden></p>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                                <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="email-error">
+                                <p class="field__error" id="email-error" hidden></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="delivery-title">
+                        <h2 id="delivery-title">Delivery or collection</h2>
+                        <fieldset class="field" aria-describedby="fulfilment-error">
+                            <legend class="sr-only">Delivery or collection</legend>
+                            <div class="option-cards">
+                                <label class="option-card">
+                                    <input type="radio" name="fulfilment" value="delivery">
+                                    <span>Delivery<small>Cost confirmed by staff</small></span>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="fulfilment" value="collection">
+                                    <span>Collection<small>From our store in Porterville</small></span>
+                                </label>
+                            </div>
+                            <p class="field__error" id="fulfilment-error" hidden></p>
+                        </fieldset>
+
+                        <div class="form-grid" data-delivery-fields hidden>
+                            <div class="field">
+                                <label for="address">Delivery address <span class="req" aria-hidden="true">*</span></label>
+                                <textarea class="textarea" id="address" name="address" rows="3" autocomplete="street-address" aria-describedby="address-error"></textarea>
+                                <p class="field__error" id="address-error" hidden></p>
+                            </div>
+                            <div class="field">
+                                <label for="town">Town / suburb <span class="req" aria-hidden="true">*</span></label>
+                                <input class="input" id="town" name="town" type="text" autocomplete="address-level2" aria-describedby="town-error">
+                                <p class="field__error" id="town-error" hidden></p>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="instructions">Additional instructions <span class="hint">(optional)</span></label>
+                            <textarea class="textarea" id="instructions" name="instructions" rows="3" maxlength="500" aria-describedby="instructions-error"></textarea>
+                            <p class="field__error" id="instructions-error" hidden></p>
+                        </div>
+                    </section>
+
+                    <div class="hp" aria-hidden="true">
+                        <label for="website">Leave this field empty</label>
+                        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="notice" role="note">
+                        <p><strong>Before you pay:</strong> stock and delivery charges must be confirmed by our staff. The final amount is confirmed after that, and payment is by EFT.</p>
+                    </div>
+
+                    <div data-submit-result role="alert" hidden></div>
+
+                    <button type="submit" class="btn btn--primary btn--large btn--block">Send order request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/checkout.js"></script>
+</body>
+</html>

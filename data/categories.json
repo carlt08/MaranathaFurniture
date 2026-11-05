@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lounge-suites-couches",
+    "name": "Lounge Suites & Couches",
+    "image": "assets/images/categories/lounge-suites-couches.webp",
+    "imageAlt": "Grey tufted sofa in a bright living room (demonstration photo)"
+  },
+  {
+    "id": "bedroom-furniture",
+    "name": "Bedroom Furniture",
+    "image": "assets/images/categories/bedroom-furniture.webp",
+    "imageAlt": "Bedroom with a bed and two orange benches (demonstration photo)"
+  },
+  {
+    "id": "beds-headboards",
+    "name": "Beds & Headboards",
+    "image": "assets/images/categories/beds-headboards.webp",
+    "imageAlt": "Neatly made white bed with a padded headboard (demonstration photo)"
+  },
+  {
+    "id": "dining-room-furniture",
+    "name": "Dining Room Furniture",
+    "image": "assets/images/categories/dining-room-furniture.webp",
+    "imageAlt": "Dining table and chairs in a sunny room (demonstration photo)"
+  },
+  {
+    "id": "tv-stands-cabinets",
+    "name": "TV Stands & Cabinets",
+    "image": "assets/images/categories/tv-stands-cabinets.webp",
+    "imageAlt": "Low white TV cabinet below a television (demonstration photo)"
+  },
+  {
+    "id": "tables-chairs",
+    "name": "Tables & Chairs",
+    "image": "assets/images/categories/tables-chairs.webp",
+    "imageAlt": "Round table with modern chairs (demonstration photo)"
+  },
+  {
+    "id": "cupboards-storage",
+    "name": "Cupboards & Storage",
+    "image": "assets/images/categories/cupboards-storage.webp",
+    "imageAlt": "Tall wooden storage cabinet against a pink wall (demonstration photo)"
+  },
+  {
+    "id": "other-furniture",
+    "name": "Other Furniture",
+    "image": "assets/images/categories/other-furniture.webp",
+    "imageAlt": "Wooden stool on a blue background (demonstration photo)"
+  }
+]
